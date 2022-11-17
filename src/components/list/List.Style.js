@@ -9,7 +9,15 @@ const Container = styled.div`
 `;
 
 const Child1 = styled.div`
-  flex: 0.5;
+  @media only screen and (min-width: 600px) {
+    flex: 0.5;
+  }
+  @media only screen and (max-width: 600px) {
+    flex: 1;
+  }
+  @media only screen and (max-width: 300px) {
+    flex: 1;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,14 +51,30 @@ const InnerChild = styled.div`
 `;
 
 const Child2 = styled.section`
-  flex: 0.5;
+  @media only screen and (min-width: 600px) {
+    flex: 0.5;
+  }
+  @media only screen and (max-width: 600px) {
+    flex: 1;
+  }
+  @media only screen and (max-width: 300px) {
+    flex: 1;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const Child3 = styled.section`
-  flex: 7;
+  @media only screen and (min-width: 600px) {
+    flex: 7;
+  }
+  @media only screen and (max-width: 600px) {
+    flex: 3;
+  }
+  @media only screen and (max-width: 300px) {
+    flex: 2;
+  }
   display: flex;
   padding-inline: 1%;
   justify-content: flex-start;
@@ -58,7 +82,15 @@ const Child3 = styled.section`
 `;
 
 const Child4 = styled.section`
-  flex: 2;
+  @media only screen and (min-width: 600px) {
+    flex: 2;
+  }
+  @media only screen and (max-width: 600px) {
+    flex: 2;
+  }
+  @media only screen and (max-width: 300px) {
+    flex: 2;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
